@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Space Invaders Game</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body> 
+        <div class="wrap">
+            <header>Space Invaders</header>
+            <div class="game-wrapper">
+                <div class="game"></div>
+                <div class="congratulations">
+                    <h1 id="congrats">Congratulations!</h1>
+                    <h2 id="won">You Won the game</h2>
+                    <button class="btn" onlick="refreshPage()">Restart</button>
+                </div>
+                <div class="game-over">
+                    <h1 id="gameover">GAME OVER!</h1>
+                    <h2 id="lost">You lost the game</h2>
+                    <button class="btn" onclick="window.location.reload()">Restart</button>
+                </div>
+            </div>
+            <div class="info">
+                <p id="play">Click left/right keys to move and click Space to crush the enemies by your laser!</p>
+                <p id="goodluck">Good Luck!</p>
+            </div>
+            
+        </div>
+        
+        <div class="footer">Copyright © Patryk Dominiak </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
